@@ -1,0 +1,61 @@
+$icon-font-path: '../fonts/';
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+body{
+  padding: 20px;
+  background-color: #2b2e3b;
+  color: #88d7e7;
+  font-family: 'Roboto', sans-serif;
+}
+
+.shortcuts{
+  font-size: 16px;
+
+  .nav-tabs{
+    font-weight: bold;
+    border-bottom: 1px solid #cae8ef;
+  }
+
+  .nav-item{
+    .nav-link{
+      color: #88d7e7; 
+    }
+
+    &.active{
+      color: #183d44;
+
+      .nav-link{
+        color: #183d44;
+        background-color: #cae8ef;
+        border: 1px solid #ddd;
+        border-bottom-color: transparent;
+      }
+    }
+  }
+
+  .tab-content{
+    padding: 2px 20px 0;
+  }
+
+  .shortcut{
+    border-bottom: 1px solid #88d7e7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+
+    &--keys{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .key{
+      border: 1px solid #88d7e7; 
+      border-radius: 5px;
+      padding: 5px 8px;
+      margin: 0 5px;
+    }
+  }
+}
